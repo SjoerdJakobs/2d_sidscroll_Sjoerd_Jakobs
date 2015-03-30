@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\CamelBehaviour.cs" />
      <Compile Include="Assets\scripts\ParallaxController.cs" />
      <Compile Include="Assets\scripts\ParallaxLayer.cs" />
      <Compile Include="Assets\scripts\Player1.cs" />
