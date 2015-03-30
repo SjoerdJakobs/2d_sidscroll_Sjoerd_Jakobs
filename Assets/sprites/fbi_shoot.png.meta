@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: d88d68e27ed502148b602c5896281bd2
+timeCreated: 1427652180
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fbi_shoot_0
+    21300002: fbi_shoot_1
+    21300004: fbi_shoot_2
+    21300006: fbi_shoot_3
+    21300008: fbi_shoot_4
+    21300010: fbi_shoot_5
+    21300012: fbi_shoot_6
+    21300014: fbi_shoot_7
+    21300016: fbi_shoot_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fbi_shoot_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 130
+        width: 38
+        height: 48
+      alignment: 9
+      pivot: {x: .710345089, y: .00574207306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 130
+        width: 40
+        height: 48
+      alignment: 9
+      pivot: {x: .665374756, y: -.0114844637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 160
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 64
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 83
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fbi_shoot_8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 50
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
