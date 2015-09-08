@@ -30,9 +30,9 @@ public class CamelBehaviour : MonoBehaviour {
 	}
     void OnCollisionEnter(Collision coll)
     {
-        if (coll.gameObject.name == "Wall1X")
+        if (coll.gameObject.tag == "player")
         {
-            moveSpeed = moveSpeed * -1;
+            moveSpeed = -1;
         }
     }
 }

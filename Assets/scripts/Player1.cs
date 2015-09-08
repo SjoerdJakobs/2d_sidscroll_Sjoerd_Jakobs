@@ -6,16 +6,20 @@ public class Player1 : MonoBehaviour {
     public AudioClip playerJump;
     public AudioClip playerShoot;
     public float movementSpeed = 6f;
-    private bool grounded = true;
-    private bool move = true;
+    private bool _grounded = true;
+    private bool _move = true;
     private ParallaxController _parallaxController;
+    [SerializeField] private bool _airControl = false;
+    [SerializeField] private LayerMask m_WhatIsGround;
 
-    Animator anim;
+    private Animator _anim;
+    private Rigidbody2D _rigidbody2D;
 
     // Use this for initialization
     void Start()
     {
-        anim = GetComponent<Animator>();
+        _anim = GetComponent<Animator>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void Awake()
@@ -29,7 +33,7 @@ public class Player1 : MonoBehaviour {
         float x = Input.GetAxis("Horizontal");
         Vector2 movement = new Vector2(x, 0f);
         //transform.Translate(movement * movementSpeed * Time.deltaTime);
-        if (move == true)
+        if (_move == true)
         {
             _parallaxController.Scroll(movement *= -1);
         }  
@@ -39,41 +43,21 @@ public class Player1 : MonoBehaviour {
     {
         if (other.gameObject.tag == "ground")
         {
-            grounded = true;
+            _grounded = true;
         }
     }
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "ground")
         {
-            grounded = false;
+            _grounded = false;
         }
     }
     void Movement()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (playerShoot != null)
-            {
-                AudioSource.PlayClipAtPoint(playerShoot, transform.position);
-            }
-        }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            anim.SetBool("shoot", true);
-            movementSpeed = 0f;
-            move = false;
-            
-        }
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            anim.SetBool("shoot", false);
-            movementSpeed = 6f;
-            move = true;
-        }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            if (grounded == true)
+            if (_grounded == true)
             {
                 if (playerJump != null)
                 {
@@ -86,24 +70,24 @@ public class Player1 : MonoBehaviour {
         {
             transform.localScale = new Vector3(-3, 3, 3);
             transform.Translate(Vector2.right * movementSpeed * Time.deltaTime);
-            anim.SetInteger("walking", 1);
+            _anim.SetInteger("walking", 1);
         }
 
        if(Input.GetKeyUp(KeyCode.D))
         {
-            anim.SetInteger("walking", 0);
+            _anim.SetInteger("walking", 0);
         }
 
         if(Input.GetKey (KeyCode.A))
         {
             transform.localScale = new Vector3(3, 3, 3);
             transform.Translate(-Vector2.right * movementSpeed * Time.deltaTime);
-            anim.SetInteger("walking", 1);
+            _anim.SetInteger("walking", 1);
         }
 
         if (Input.GetKeyUp(KeyCode.A))
         {
-            anim.SetInteger("walking", 0);
+            _anim.SetInteger("walking", 0);
         }
     }
 }
